@@ -10,6 +10,16 @@
 - Your library stays with you, in plain JSON files
 - Interface in English and Portuguese
 
+<p align="center">
+  <img src=".github/screenshots/library.png" alt="The library: covers, unread counts and the New badge" width="100%">
+</p>
+<p align="center">
+  <img src=".github/screenshots/series.png" alt="A series: reading progress, release frequency, Continue and the chapter list" width="64%">
+  <img src=".github/screenshots/phone-library.png" alt="The library on a phone, dark theme, in Portuguese" width="17%">
+  <img src=".github/screenshots/phone-news.png" alt="New chapters on a phone" width="17%">
+</p>
+<p align="center"><sub>Demo library with made-up series and covers.</sub></p>
+
 ## Download (version 0.1.0)
 
 | Platform | Files |
@@ -82,6 +92,12 @@ Free software under the [GPL-3.0-or-later](LICENSE). Made by FCR with the help o
 - App de desktop com ícone na bandeja, app Android e servidor em casa (Docker / TrueNAS)
 - A sua biblioteca fica com você, em arquivos JSON comuns
 - Interface em português e em inglês
+
+<p align="center">
+  <img src=".github/screenshots/phone-library.png" alt="A biblioteca no celular, tema escuro" width="32%">
+  <img src=".github/screenshots/phone-news.png" alt="Novidades no celular" width="32%">
+</p>
+<p align="center"><sub>Biblioteca de demonstração, com obras e capas inventadas. Mais capturas na seção em inglês.</sub></p>
 
 ## Download (versão 0.1.0)
 
