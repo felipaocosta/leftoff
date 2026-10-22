@@ -1,0 +1,91 @@
+/* Theme tokens (RF-36). Light by default, dark via system preference or
+   data-theme="dark" on <html>. Components use only these variables. */
+:root {
+  --bg: #f6f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef0f4;
+  --text: #16181d;
+  --text-muted: #5b6270;
+  --border: #d9dce3;
+  --accent: #3b5bdb;
+  --accent-text: #ffffff;
+  --success: #2b8a3e;
+  --warning: #b35c00;
+  --danger: #c92a2a;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgb(0 0 0 / 0.12);
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #111317;
+    --surface: #1a1d23;
+    --surface-2: #232730;
+    --text: #e8eaf0;
+    --text-muted: #9aa1b0;
+    --border: #2e333d;
+    --accent: #748ffc;
+    --accent-text: #0b0d12;
+    --success: #69db7c;
+    --warning: #ffa94d;
+    --danger: #ff8787;
+    --shadow: 0 1px 3px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #111317;
+  --surface: #1a1d23;
+  --surface-2: #232730;
+  --text: #e8eaf0;
+  --text-muted: #9aa1b0;
+  --border: #2e333d;
+  --accent: #748ffc;
+  --accent-text: #0b0d12;
+  --success: #69db7c;
+  --warning: #ffa94d;
+  --danger: #ff8787;
+  --shadow: 0 1px 3px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.45;
+}
+
+a {
+  color: var(--accent);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Phones: room at the bottom for a floating page action (ContinueButton). */
+@media (max-width: 640px) {
+  body.has-sticky-action main {
+    padding-bottom: calc(140px + env(safe-area-inset-bottom));
+  }
+}

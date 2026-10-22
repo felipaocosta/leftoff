@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No action bar: the web UI has its own navigation. The colors are the
+         web theme's page and surface colors (web/src/app.css). -->
+    <style name="Theme.LeftOff" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/page</item>
+    </style>
+    <!-- Splash screen until the first page is drawn (MainActivity). -->
+    <style name="Theme.LeftOff.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/page</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.LeftOff</item>
+    </style>
+    <color name="page">#f6f6f8</color>
+    <color name="bar">#ffffff</color>
+</resources>

@@ -1,0 +1,52 @@
+# Flatpak of the LeftOff desktop app (Phase 6). Build with
+# deploy/flatpak/build.sh. The app ID is provisional (SPEC §15.1).
+#
+# Local builds download the Go modules (build-args --share=network); a
+# Flathub submission needs them vendored or listed as sources instead.
+# Inside the sandbox the host browser cannot be started, so the build has
+# no "rod" tag: Cloudflare sites need a FlareSolverr (detected at
+# 127.0.0.1:8191) or the AppImage.
+app-id: io.github.felipaocosta.LeftOff
+runtime: org.gnome.Platform
+runtime-version: '51'
+sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.golang
+command: leftoff
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  # Tray icon (StatusNotifierItem): talk to the host and own the item name.
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --own-name=org.kde.*
+build-options:
+  append-path: /usr/lib/sdk/golang/bin
+  build-args:
+    - --share=network
+  env:
+    GOPATH: /run/build/leftoff/go
+    GOCACHE: /run/build/leftoff/gocache
+    GOTOOLCHAIN: auto
+    GOFLAGS: -modcacherw # flatpak-builder must be able to delete the module cache
+    CGO_ENABLED: '1'
+modules:
+  - name: leftoff
+    buildsystem: simple
+    build-commands:
+      - go build -trimpath -tags desktop,production,webkit2_41 -ldflags "-s -w -X main.version=$(cat VERSION 2>/dev/null || echo dev)" -o /app/bin/leftoff ./cmd/desktop
+      - install -Dm644 deploy/flatpak/io.github.felipaocosta.LeftOff.desktop /app/share/applications/io.github.felipaocosta.LeftOff.desktop
+      - install -Dm644 deploy/flatpak/io.github.felipaocosta.LeftOff.metainfo.xml /app/share/metainfo/io.github.felipaocosta.LeftOff.metainfo.xml
+      - install -Dm644 deploy/icons/leftoff.svg /app/share/icons/hicolor/scalable/apps/io.github.felipaocosta.LeftOff.svg
+    sources:
+      - type: dir
+        path: ../..
+        skip:
+          - .git
+          - dist
+          - web/node_modules
+          - deploy/flatpak/.flatpak-builder
+          - deploy/flatpak/build-dir
+          - deploy/flatpak/repo

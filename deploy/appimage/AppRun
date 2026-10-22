@@ -1,0 +1,5 @@
+#!/bin/sh
+# Entry point of the AppImage: runs the bundled binary, which defaults to
+# the desktop "app" command (local server + browser).
+HERE="$(dirname "$(readlink -f "$0")")"
+exec "$HERE/usr/bin/leftoff" "$@"

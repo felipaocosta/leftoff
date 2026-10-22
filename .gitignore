@@ -1,0 +1,38 @@
+# Build output
+/bin/
+/dist/
+
+# Local data and secrets
+/data/
+.env
+*.local.json
+
+# Go
+*.test
+*.out
+coverage.*
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Frontend (Phase 2)
+web/node_modules/
+web/dist/*
+!web/dist/.gitkeep
+
+# Flatpak builds (deploy/flatpak/build.sh)
+deploy/flatpak/.flatpak-builder/
+deploy/flatpak/build-dir/
+deploy/flatpak/repo/
+/VERSION
+
+# Playwright (web/e2e)
+web/test-results/
+web/playwright-report/
+
+# Binaries built in the repository root (go build ./cmd/server)
+/server
+/desktop

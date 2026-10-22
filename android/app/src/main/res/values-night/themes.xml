@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LeftOff" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/page</item>
+    </style>
+    <!-- Splash screen until the first page is drawn (MainActivity). -->
+    <style name="Theme.LeftOff.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/page</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.LeftOff</item>
+    </style>
+    <color name="page">#111317</color>
+    <color name="bar">#1a1d23</color>
+</resources>

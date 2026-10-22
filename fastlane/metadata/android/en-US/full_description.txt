@@ -1,0 +1,9 @@
+LeftOff keeps track of what you read: which series you follow, the last chapter you read and when a new one is out.
+
+It is not a reader and stores no chapters: a chapter always opens where you read it.
+
+• MangaDex support through its official API
+• Your own recipes: teach the app to read a site, optionally with a local AI model
+• Reading progress, "mark up to here", categories, filters and new-chapter notifications
+• Works on its own, or connected to your home server (Docker, TrueNAS)
+• Your library stays on your device, in plain JSON files you can export

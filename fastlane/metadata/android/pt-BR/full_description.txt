@@ -1,0 +1,9 @@
+O LeftOff (Onde Parei) acompanha o que você lê: as obras que você segue, o último capítulo lido e quando sai um capítulo novo.
+
+Ele não é um leitor e não guarda capítulos: o capítulo sempre abre onde você o lê.
+
+• Suporte ao MangaDex pela API oficial
+• Receitas suas: ensine o app a ler um site, com ajuda opcional de um modelo de IA local
+• Progresso de leitura, "marcar até aqui", categorias, filtros e notificação de capítulo novo
+• Funciona sozinho ou conectado ao seu servidor em casa (Docker, TrueNAS)
+• A biblioteca fica no seu aparelho, em arquivos JSON comuns que você pode exportar

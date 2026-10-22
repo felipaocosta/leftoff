@@ -1,0 +1,2 @@
+go test fuzz v1
+[]byte("{\"sChemA\":1,\"series\":[{\"title\":\"0\",\"sourCe\":{\"url\":\"https://0\"},\"ChApters\":[{\"reAd\":true}]}]}")

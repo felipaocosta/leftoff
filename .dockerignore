@@ -1,0 +1,10 @@
+# Keep the build context small and free of local data.
+.git
+data
+dist
+bin
+web/node_modules
+web/dist/*
+!web/dist/.gitkeep
+**/*.AppImage
+**/*.exe

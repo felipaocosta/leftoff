@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.felipaocosta.LeftOff</id>
+  <name>LeftOff</name>
+  <name xml:lang="pt-BR">LeftOff (Onde Parei)</name>
+  <summary>A reading tracker for manga, manhwa, manhua and novels</summary>
+  <summary xml:lang="pt-BR">Rastreador de leitura de mangás, manhwas, manhuas e novels</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>LeftOff keeps track of what you read: which series you follow, the last chapter you read and
+      when a new one is out. It is not a reader and stores no chapters: a chapter always opens where you read
+      it.</p>
+    <p xml:lang="pt-BR">O LeftOff (Onde Parei) acompanha o que você lê: as obras que você segue, o último capítulo
+      lido e quando sai um capítulo novo. Ele não é um leitor e não guarda capítulos: o capítulo sempre abre
+      onde você o lê.</p>
+    <ul>
+      <li>MangaDex support through its official API</li>
+      <li xml:lang="pt-BR">Suporte ao MangaDex pela API oficial</li>
+      <li>Your own recipes: teach the app to read a site, optionally with a local AI model</li>
+      <li xml:lang="pt-BR">Receitas suas: ensine o app a ler um site, com ajuda opcional de um modelo de IA local</li>
+      <li>Reading progress, categories, filters and new-chapter alerts</li>
+      <li xml:lang="pt-BR">Progresso de leitura, categorias, filtros e avisos de capítulo novo</li>
+      <li>Your library stays on your computer, in plain JSON files</li>
+      <li xml:lang="pt-BR">A biblioteca fica no seu computador, em arquivos JSON comuns</li>
+    </ul>
+  </description>
+  <url type="homepage">https://github.com/felipaocosta/leftoff</url>
+  <url type="bugtracker">https://github.com/felipaocosta/leftoff/issues</url>
+  <developer id="io.github.felipaocosta">
+    <name>FCR</name>
+  </developer>
+  <launchable type="desktop-id">io.github.felipaocosta.LeftOff.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-10-21"/>
+  </releases>
+</component>

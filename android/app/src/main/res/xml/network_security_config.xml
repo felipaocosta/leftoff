@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Go core listens on 127.0.0.1 and home servers (TrueNAS) are usually
+     plain http on the local network, so cleartext is allowed. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

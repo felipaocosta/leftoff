@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=LeftOff
+Name[pt_BR]=LeftOff (Onde Parei)
+Comment=Rastreador de leitura de mangás, manhwas, manhuas e novels
+Exec=leftoff
+Icon=leftoff
+Terminal=false
+Categories=Utility;
+Keywords=manga;manhwa;manhua;novel;reading;tracker;
+StartupNotify=false

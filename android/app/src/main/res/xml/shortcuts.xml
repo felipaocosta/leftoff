@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Long press on the launcher icon. -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="add"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_add"
+        android:shortcutShortLabel="@string/shortcut_add">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="leftoff://add"
+            android:targetClass="io.github.felipaocosta.leftoff.MainActivity"
+            android:targetPackage="io.github.felipaocosta.leftoff" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="news"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_news"
+        android:shortcutShortLabel="@string/shortcut_news">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="leftoff://news"
+            android:targetClass="io.github.felipaocosta.leftoff.MainActivity"
+            android:targetPackage="io.github.felipaocosta.leftoff" />
+    </shortcut>
+</shortcuts>

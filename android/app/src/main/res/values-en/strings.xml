@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_failed">LeftOff could not start: %1$s</string>
+    <string name="server_unreachable">The server did not answer. Opening this device’s library.</string>
+    <string name="saved_file">Library exported: %1$s</string>
+    <string name="save_failed">The file could not be saved: %1$s</string>
+    <string name="shortcut_add">Add series</string>
+    <string name="shortcut_news">New chapters</string>
+    <string name="channel_new_chapters">New chapters</string>
+    <plurals name="new_chapters_title">
+        <item quantity="one">%1$d series with a new chapter</item>
+        <item quantity="other">%1$d series with new chapters</item>
+    </plurals>
+    <string name="series_chapter">%1$s: ch. %2$s</string>
+    <plurals name="more_series">
+        <item quantity="one">+%1$d series</item>
+        <item quantity="other">+%1$d series</item>
+    </plurals>
+    <string name="check_title">Complete the check on %1$s so the app can read the page.</string>
+    <string name="check_cancel">Cancel</string>
+</resources>

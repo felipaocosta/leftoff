@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=LeftOff
+Name[pt_BR]=LeftOff (Onde Parei)
+GenericName=Reading tracker
+GenericName[pt_BR]=Acompanhamento de leitura
+Comment=A reading tracker for manga, manhwa, manhua and novels
+Comment[pt_BR]=Rastreador de leitura de mangás, manhwas, manhuas e novels
+Exec=leftoff
+Icon=io.github.felipaocosta.LeftOff
+Terminal=false
+Categories=Utility;Office;
+Keywords=manga;manhwa;manhua;novel;reading;tracker;

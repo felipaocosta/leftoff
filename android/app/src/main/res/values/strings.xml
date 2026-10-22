@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">LeftOff</string>
+    <string name="start_failed">Não foi possível iniciar o LeftOff: %1$s</string>
+    <string name="server_unreachable">O servidor não respondeu. Abrindo a biblioteca deste aparelho.</string>
+    <string name="saved_file">Biblioteca exportada: %1$s</string>
+    <string name="save_failed">Não foi possível salvar o arquivo: %1$s</string>
+    <string name="shortcut_add">Adicionar obra</string>
+    <string name="shortcut_news">Novidades</string>
+    <string name="channel_new_chapters">Capítulos novos</string>
+    <plurals name="new_chapters_title">
+        <item quantity="one">%1$d obra com capítulo novo</item>
+        <item quantity="other">%1$d obras com capítulos novos</item>
+    </plurals>
+    <string name="series_chapter">%1$s: cap. %2$s</string>
+    <plurals name="more_series">
+        <item quantity="one">+%1$d obra</item>
+        <item quantity="other">+%1$d obras</item>
+    </plurals>
+    <string name="check_title">Conclua a verificação de %1$s para o app ler a página.</string>
+    <string name="check_cancel">Cancelar</string>
+</resources>
